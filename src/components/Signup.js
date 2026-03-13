@@ -4,7 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
 const Signup = () => {
-  const navigate = useNavigate();
+ 
   const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
@@ -19,10 +19,7 @@ const Signup = () => {
     });
   };
 
-  const handleError = (err) =>
-    toast.error(err, {
-      position: "bottom-left",
-    });
+  
   const handleSuccess = (msg) =>
     toast.success(msg, {
       position: "bottom-right",
