@@ -13,7 +13,7 @@ const BuyActionWindow = ({ uid }) => {
   const generalContext = useContext(GeneralContext);
 
   const handleBuyClick = async () => {
-    await axios.post("http://localhost:3002/newOrder", {
+    await axios.post("https://niveshika-trading-and-investment-we-alpha.vercel.app/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,

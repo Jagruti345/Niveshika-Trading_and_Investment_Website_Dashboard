@@ -23,7 +23,7 @@ const Menu = () => {
   // 🔹 check login status
   useEffect(() => {
     axios
-      .post("http://localhost:3002/verify", {}, { withCredentials: true })
+      .post("https://niveshika-trading-and-investment-we-alpha.vercel.app/verify", {}, { withCredentials: true })
       .then((res) => {
         if (res.data.status) {
           setIsLoggedIn(true);

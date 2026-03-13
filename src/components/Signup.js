@@ -29,7 +29,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/signup",
+        "https://niveshika-trading-and-investment-we-alpha.vercel.app/signup",
         {
           ...inputValue,
         },
